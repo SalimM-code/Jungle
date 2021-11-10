@@ -11,8 +11,8 @@
     <%= product.category.name %>
   </td>
   <td>
-    <%= product.price %>
-    <%= humanized_money_with_symbol%>
+    <%= number_to_currency(product.price) %>
+
   </td>
   <td>
     <%= product.quantity %>
