@@ -33,8 +33,7 @@ RSpec.describe Product, type: :model do
         price: nil,
       )
       expect(@product).to_not be_valid
-      # puts "#{@product.errors.full_messages}"
-      # expect(@product.errors.messages[:price]).to eq ["is not a number"]
+      
     end
 
     it 'should return an error if quantity is nil' do
